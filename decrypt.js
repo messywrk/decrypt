@@ -19,10 +19,14 @@ function pickWords(numWords) {
 }
 
 function generateCode() {
-	var code = _.sample([1,2,3,4], 3);
-	Cookies.set("code", code);
-	setCode(code);
-	$('#codeModal').modal('show');
+	
+	var r = confirm("Neuen Code generieren?");
+	if (r == true) {
+	  var code = _.sample([1,2,3,4], 3);
+	  Cookies.set("code", code);
+	  setCode(code);
+	  $('#codeModal').modal('show');
+	} 
 }
 
 function setCode(code) {
