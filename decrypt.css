@@ -29,3 +29,8 @@ html {
 	font-weight: bold;
 	font-size: 3em;
 }
+
+.dropdown-item {
+	height: 5em;
+	line-height: 4.5em;
+}
